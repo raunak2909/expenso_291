@@ -1,4 +1,4 @@
-import 'dashBoard_page.dart';
+import 'ui/dashboard/dashBoard_page.dart';
 import 'package:flutter/material.dart';
 
 import 'color_constant.dart';

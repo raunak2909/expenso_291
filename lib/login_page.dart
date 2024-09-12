@@ -1,4 +1,6 @@
-import 'dashBoard_page.dart';
+import 'package:expanses_task11/sign_up_page.dart';
+
+import 'ui/dashboard/dashBoard_page.dart';
 import 'package:expanses_task11/navPage.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -25,6 +27,7 @@ class _LoginPageState extends State<LoginPage> {
         title: Center(child: Text("Login")),
       ),
       body: Container(
+        padding: EdgeInsets.all(11),
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(
@@ -109,6 +112,14 @@ class _LoginPageState extends State<LoginPage> {
                   )),
                 ),
               ),
+
+              InkWell(
+                  onTap: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
+                      return SignUpPage();
+                    }));
+                  },
+                  child: Text("Don't have an account? Create now",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),))
             ],
           )),
     );

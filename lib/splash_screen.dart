@@ -22,8 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    nextPage();
     super.initState();
+    nextPage();
   }
 
   Widget page = NavPage();
